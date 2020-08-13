@@ -1,0 +1,19 @@
+x = float(input("Введіть перше число: "))
+y = float(input("Введіть перше число: "))
+action = input("Дія (+ - * /): ")
+
+if action == "+":
+    z = x + y
+elif action == "-":
+    z = x - y
+elif action == "*":
+    z = x * y
+elif action == "/":
+    if y == 0:
+        z = "На нуль ділити не можна!"
+    else:
+        z = round(x / y, 2)
+else:
+    z = "Помилка"
+
+print(x, " ", action, " ", y, " = ", z)
